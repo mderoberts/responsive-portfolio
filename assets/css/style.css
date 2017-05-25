@@ -13,7 +13,7 @@ body {
 /*Wrapper width for browser widths above 768px*/
 .wrapper {
   width: 1024px;
-  /*margin: 40px auto;*/
+  margin: 40px auto;
 }
 
 /* general */
@@ -247,11 +247,22 @@ input[type=submit] {
 /*Browser width rules for 980 or less*/
 @media screen and (max-width: 980px) {
   .wrapper {
-    width: 600px;
+    width: 100%;
+    padding: 20px;
   }
+
+  .sidebar,
+  .container
+  #main-container {
+    width: 100%;
+  }
+
+  /*.sidebar {
+    max-width: 960px;
+  }*/
 }
 
-/*Browser width rules for 768px or less*/
+/*Browser width rules for 768px or less*
 @media screen and (max-width: 768px) {
   .wrapper {
     width: 100%;
@@ -259,15 +270,35 @@ input[type=submit] {
   }
 
   .sidebar,
+  .container
   #main-container {
     width: 100%;
   }
 
+  .sidebar {
+    max-width: 960px;
+  }
+
+  /*.masthead {
+    margin-bottom: 10px;
+  }*/
+
 }
 
-/*Browser width rules for 640 or less*/
+/*Browser width rules for 640 or less*
 @media screen and (max-width: 640px) {
   .wrapper {
-    width: 600px;
+    width: 100%;
+    padding: 20px;
   }
-}
+
+  .sidebar,
+  .container
+  #main-container {
+    width: 100%;
+  }
+
+  .sidebar {
+    max-width: 960px;
+  }
+}*/
