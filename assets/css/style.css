@@ -10,11 +10,12 @@ body {
   box-sizing: border-box;
 }
 
-/*Wrapper width for browser widths above 768px*/
+
+/*Wrapper width for browser widths above 768px*
 .wrapper {
   width: 1024px;
-  margin: 40px auto;
-}
+  margin: 0px auto;
+}*/
 
 /* general */
 
@@ -246,16 +247,25 @@ input[type=submit] {
 
 /*Browser width rules for 980 or less*/
 @media screen and (max-width: 980px) {
-  .wrapper {
+  /*.wrapper {
     width: 100%;
     padding: 20px;
-  }
+  }*/
 
   .sidebar,
-  .container
-  #main-container {
-    width: 100%;
+  .main-section {
+    width: 50%;
   }
+
+  #logo,
+  .main-section {
+    margin-left: 10%;
+  }
+
+  .sidebar {
+    margin-right: 10%;
+  }
+
 
   /*.sidebar {
     max-width: 960px;
