@@ -10,6 +10,12 @@ body {
   box-sizing: border-box;
 }
 
+/*Wrapper width for browser widths above 768px*/
+.wrapper {
+  width: 1024px;
+  /*margin: 40px auto;*/
+}
+
 /* general */
 
 .container {
@@ -236,4 +242,32 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+
+/*Browser width rules for 980 or less*/
+@media screen and (max-width: 980px) {
+  .wrapper {
+    width: 600px;
+  }
+}
+
+/*Browser width rules for 768px or less*/
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .sidebar,
+  #main-container {
+    width: 100%;
+  }
+
+}
+
+/*Browser width rules for 640 or less*/
+@media screen and (max-width: 640px) {
+  .wrapper {
+    width: 600px;
+  }
 }
