@@ -262,7 +262,8 @@ input[type=submit] {
     margin-left: 10%;
   }
 
-  .sidebar {
+  .sidebar,
+  nav {
     margin-right: 10%;
   }
 
