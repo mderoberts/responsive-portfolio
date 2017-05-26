@@ -10,13 +10,6 @@ body {
   box-sizing: border-box;
 }
 
-
-/*Wrapper width for browser widths above 768px*
-.wrapper {
-  width: 1024px;
-  margin: 0px auto;
-}*/
-
 /* general */
 
 .container {
@@ -247,11 +240,6 @@ input[type=submit] {
 
 /*Browser width rules for 980 or less*/
 @media screen and (max-width: 980px) {
-  /*.wrapper {
-    width: 100%;
-    padding: 20px;
-  }*/
-
   .sidebar,
   .main-section {
     width: 50%;
@@ -266,21 +254,61 @@ input[type=submit] {
   nav {
     margin-right: 10%;
   }
-
-
-  /*.sidebar {
-    max-width: 960px;
-  }*/
 }
 
-/*Browser width rules for 768px or less*
+/*Browser width rules for 768px or less*/
 @media screen and (max-width: 768px) {
-  .wrapper {
+.sidebar {
     width: 100%;
+    max-width: 95%;
+    margin-left: 5px;
+  }
+
+  .main-section {
+    width: 90%;
+    max-width: 100%;
+    margin-right: 100px;
     padding: 20px;
   }
 
-  .sidebar,
+  /*#masthead,
+  nav {
+    float: left;
+  }
+
+
+  /*.main-section {
+    max-width: 200%;
+    width: 150%;
+  }
+
+  /*.sidebar {
+    float:left;
+    margin: 0 3% 20px 3%;
+    max-width: 85%;
+  }*/
+
+  /*#logo,
+  .main-section {
+    margin-left: 3%;
+  }
+
+  /*footer {
+    margin-top: 10%;
+  }
+
+  /*.sidebar {
+    max-width: 100%;
+  }
+
+  /* .sidebar,
+  nav {
+    margin-right: 10%;
+  }
+
+
+
+ /* .sidebar,
   .container
   #main-container {
     width: 100%;
